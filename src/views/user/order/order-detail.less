@@ -1,0 +1,90 @@
+@deep: ~'>>>';
+.hk-coupon-main {
+  letter-spacing: 1px;
+  padding-left: 10px;
+  .on-back {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .order-main-title {
+    padding-top: 24px;
+  }
+  .sub-status {
+    display: flex;
+    justify-content: space-between;
+    .left-header {
+      color: #F04146;
+      .left-header-title {
+        font-size: 16px;
+        margin-right: 16px;
+      }
+      .left-item {
+        font-size: 12px;
+      }
+    }
+    .right-header {
+      .el-button {
+        color: #363636;
+        width: 100px;
+        height: 36px;
+        padding: 0;
+        line-height: 36px;
+        font-size: 14px;
+        border: 1px solid #B9B9B9;
+        cursor: pointer;
+        &:hover,&:focus {
+          border-color: #EF4146;
+          background: transparent;
+          color: #EF4146;
+        }
+        &.is-unpaid {
+          border-color: #EF4146;
+          background: transparent;
+          color: #EF4146;
+          &:hover,&:focus{
+            background: #EF4146;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  // 订单步骤条下的时间
+  .order-time {
+    .order-time-item {
+      display: inline-block;
+      width: 240px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  // 收货信息
+  .receiving-info {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f6f6f6;
+    .receiving-info-bar {
+      font-size: 16px;
+      width: 142px;
+      text-align: left;
+    }
+    .receipt-detail {
+      width: 800px;
+      margin-top: 3px;
+      font-size: 14px;
+    }
+  }
+  // 订单信息
+  .order-detail-page_price {
+    padding: 34px 0 46px;
+    width: 100%;
+    height: 232px;
+    display: flex;
+    justify-content: flex-end;
+    .toder {
+      color: #F04146;
+    }
+  }
+}

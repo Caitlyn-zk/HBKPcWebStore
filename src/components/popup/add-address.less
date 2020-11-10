@@ -1,0 +1,39 @@
+@deep: ~'>>>';
+.hk-addAddress {
+  .add-desc {
+    color: #F04146;
+  }
+  @{deep}.el-dialog__body {
+    padding: 10px 20px;
+    .el-input {
+      .el-input__inner {
+        width: 100%;
+        background: #f6f6f6;
+        border: none;
+        height: 42px;
+      }
+    }
+    .hk-addcont-address {
+      width: 100%;
+      
+      &.is-addco-item {
+        .el-input__inner {
+          &::placeholder {
+            color: #363636;
+          }
+        }
+      }
+    }
+    .address-is-default {
+      .el-checkbox__inner {
+        border-radius: 50%;
+      }
+    }
+  }
+  .add-name {
+    .add-name-item {
+      display: inline-block;
+      width: 328px;
+    }
+  }
+}

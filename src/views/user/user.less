@@ -1,0 +1,164 @@
+// 这里是个人页样式
+.hk-person {
+  font-family: Microsoft YaHei;
+  clear: both;
+  .user-person {
+    width: 100%;
+    background-color: #fff;
+    height: 64px;
+    margin: 20px 0;
+    z-index: 1;
+    
+    .user-person-bar {
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+    }
+    .user-menu {
+      li {
+        display: inline-block;
+        padding: 0 20px;
+        line-height: 62px;
+        font-size: 16px;
+        color: #333;
+      }
+    }
+    .serch-main {
+      line-height: 62px;
+    }
+  }
+  .text-person-size {
+    position: relative;
+    height:18px;
+    font-size:16px;
+    font-family: Microsoft YaHei;
+    // font-weight:bold;
+    color:rgba(51,51,51,1);
+    padding-left: 5px;
+    .line {
+      display: inline-block;
+      width: 3px;
+      height: 16px;
+      margin-right: 5px;
+      background: #F04146;
+      vertical-align: -3px;
+      border-radius: 25%;
+    }
+  }
+  .hk-person-content {
+    height: 100%;
+    padding-bottom: 20px;
+    .hk-person-left-nav {
+      width: 161px;
+      min-height: 673px;
+      height: 100%;
+      background: #fff;
+      font-family: Microsoft YaHei;
+      // 左侧大的导航
+      .hk-person-nav-bar {
+        width: 100%;
+        color: #333;
+        overflow-y: scroll;
+        &::-webkit-scrollbar{
+          display: none;
+        }
+        // 这里是设置大导航样式的鼠标移入时显示的颜色
+        .el-menu-item:focus,
+        .el-menu-item:hover {
+          // background-color: #F2F2F2;
+          background: transparent;
+          color: #333333;
+          font-weight: bold;
+        }
+        .el-menu-item {
+          &.is-active {
+            color: #333333;
+            background: transparent;
+            .text-person-size {
+              color: #F04146;
+              font-weight: bold;
+            }
+          }
+        }
+        .el-submenu__title:hover {
+          background: transparent;
+        }
+        .el-menu {
+          background: #fff !important;
+          border-right: none !important;
+        }
+        .el-submenu__icon-arrow {
+          display: none;
+        }
+        .el-submenu {
+          &.is-active {
+            color: #333333 !important;
+            font-weight: bold !important;
+            background: transparent;
+          }
+          .el-submenu__title {
+            padding-left: 30px !important;
+            height: 48px;
+          }
+          .el-menu-item-group {
+            .el-menu-item {
+              font-size:14px;
+              font-family: Microsoft YaHei;
+              font-weight:400;
+              color:rgba(51,51,51,1);
+              letter-spacing: 2px;
+              i {
+                color: #C5C5C5;
+              }
+              &.is-active {
+                color: #F04146;
+                font-weight: bold;
+                a {
+                  color: #333333;
+                  font-weight: bold;
+                }
+                i {
+                  color: #333333;
+                  font-weight: bold;
+                }
+              }
+            }
+            .el-submenu {
+              .el-menu-item {
+                padding: 0;
+              }
+            }
+          }
+        }
+        .el-menu-item-group__title {
+          display: none;
+        }
+        .el-menu-item {
+          padding-left: 45px !important;
+          letter-spacing: 2px;
+          a {
+            color: #333;
+            font-size: 14px;
+            &:hover {
+              color: #333333;
+              font-weight: bold;
+            }
+          }
+        }
+        .el-submenu .el-menu-item {
+          min-width: 154px !important;
+          padding:0px;
+          height: 42px;
+          line-height: 42px;
+          .el-submenu__icon-arrow {
+            display: none;
+          }
+        }
+      }
+    }
+    .hk-person-content-main {
+      width: 1039px;
+      position: relative;
+    }
+  }
+}
